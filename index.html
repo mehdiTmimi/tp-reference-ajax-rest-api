@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP AJAX</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            TP AJAX
+        </h1>
+    </header>
+    <main>
+        <article>
+            <h2>
+                New Todo:
+            </h2>
+            <div class="form">
+                <input id="UserInput" placeholder="userId">
+                <input id="TodoInput" placeholder="Title">
+                <select id="CompletedInput">
+                    <option value="true">true</option>
+                    <option value="false">false</option>
+                </select>
+                <div class="controls">
+                    <button id="resetBtn" class="reset">reset</button>
+                    <button id="submitBtn" class="submit">submit</button>
+                </div>
+            </div>
+        </article>
+        <article>
+            <h1 id="TodosList">
+                Liste des Todos (0):
+            </h1>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>useid</th>
+                            <th>id</th>
+                            <th>title</th>
+                            <th>completed</th>
+                            <th>Options</th>
+                        </tr>
+                    </thead>
+                    <tbody id="data">
+
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+    <footer>
+        @uemf-2023
+    </footer>
+</body>
+
+</html>

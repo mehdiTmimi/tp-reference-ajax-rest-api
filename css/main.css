@@ -1,0 +1,138 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    background-color: rgb(22, 129, 252);
+    color: white;
+}
+header h1{
+    padding: 20px;
+    text-align: center;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 10px 50px;
+}
+main article{
+    flex:1;
+}
+main article:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main article h2{
+    margin: 10px;
+}
+.form{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form>*{
+    width: 300px;
+    margin: 10px;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+}
+input::placeholder{
+ padding: 10px;
+}
+input{
+    padding: 10px 0px;
+}
+select{
+  padding: 10px;
+}
+.controls button{
+    padding: 10px 20px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.reset{
+    background-color: gray;
+    color: white;
+}
+.submit{
+    background-color: rgb(22, 126, 252);
+    color: white;
+}
+.supprimer{
+    background-color: rgb(125, 39, 10);
+    color: white;
+}
+.question{
+    border: 1px solid black;
+    position: relative;
+    margin-bottom: 20px;
+}
+.idQuestion{
+    position: absolute;
+    top: 0px;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-bottom-right-radius: 5px;
+    padding: 5px;
+}
+.content{
+    margin: 40px;
+}
+.switch, .delete{
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+}
+.questions{
+    height: 70vh;
+    overflow: scroll;
+    padding: 3px;
+}
+.delete{
+    background-color: rgb(171, 6, 6);
+    color: white;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.switch{
+    background-color: rgb(22, 126, 252);
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.true{
+    outline: 3px solid green;
+}
+.false{
+    outline: 3px solid rgb(170, 3, 3);
+}
+footer{
+    background-color: rgb(6, 51, 105);
+    color: white;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+#TodosList{
+   margin-top: 10px;
+}
+th, td{
+    border: 1px solid black;
+}
